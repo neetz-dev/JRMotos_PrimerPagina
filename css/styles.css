@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+    text-decoration: none;
+    list-style: none;
+	box-sizing: border-box;
+	font-family: 'Open Sans';
+}
+
+body {
+    background-color: rgb(19, 18, 18);
+    background-size: cover;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+h1 {
+    font-size: 3.5em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    color: #efefef;
+    background-color:black;
+}
+
+button:hover {
+    background-color: red;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav {
+    background-color: black;
+    height: 80px;
+    width: 100%;
+}
+
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logojr {
+    height: 50px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+li a.actives, li a:hover {
+    background: red;
+    transition: 5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.pie-de-pagina {
+    width: 100%;
+    background-color: black;
+}
+
+.pie-de-pagina .grupo1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding: 15px 0px;
+}
+
+.pie-de-pagina .grupo1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-de-pagina .grupo1 .box figure img {
+    width: 100px;
+}
+
+.pie-de-pagina .grupo1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-de-pagina .grupo1 .box {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-de-pagina .grupo1 .redsocial a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: rgb(19, 18, 18);
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-de-pagina .grupo1 .redsocial a:hover {
+    color: red;
+}
+
+.pie-de-pagina .grupo2 {
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+    background-color: rgb(19, 18, 18);
+}
+
+.pie-de-pagina .grupo2 small {
+    font-size: 15px;
+}
+
+@media screen and (max-width:868px) {
+    .pie-de-pagina .grupo1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+@media screen and (max-width:868px) {
+    .enlace {
+        padding-left: 20px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 868px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(19, 18, 18);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    a {
+        font-size: 20px;
+    }
+    li a:hover, li a.actives {
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+#hero {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(../img/fondoktm.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #efefef;
+    
+}
+
+#hero h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+#motobanner {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(../img/config-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #efefef;
+    font-size: 1,5em;
+    margin-top: 50px;
+}
+
+#motobanner .container {
+    text-align: center;
+    padding: 80px 12px;
+}
+
+#tiposdemotos {
+    background-color: rgb(19, 18, 18);
+    color: white;
+    text-align: center;
+}
+
+#tiposdemotos .container {
+    padding: 100px 20px;
+}
+
+#tiposdemotos h2 {
+    margin-top: 0px;
+    font-size: 3.2em;
+}
+
+#tiposdemotos p {
+    display: none;
+}
+
+#tiposdemotos .carta {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 12px;
+    border-radius: 15px;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(../img/motrocross.jpg);
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(../img/racing.jpg);
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(../img/naked.jpg);
+}
+
+.contenidonosotros {
+    color: #efefef;
+    margin: auto;
+    padding: 15px;
+    font-size: 3em;
+}
+
+#fondocontacto {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)), url(../img/KTM_Stories_Header_02_2020.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#fondonosotros {
+    background-image:  linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)), url(../img/fondo.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#fondovehiculos {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)) ,url(../img/KTM-Dual-Monitor-Wallpaper.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.logo {
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    margin-top: 30px;
+}
+
+.logo span {
+    color: #B70E21;
+}
+
+
+.contact-wrapper {
+    padding: 3.4em;
+}
+
+.contact-form {
+    background: rgb(0, 0, 0, 0.6);
+    border-radius: 7px;
+    color: white;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 7px;
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid red;
+}
+
+.contact-form form button {
+    background: black;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: red;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+    color: #efefef;
+    margin-top: 20px;
+}
+
+.mapanosotros {
+    margin: 20px 20px;
+    padding: 20px;
+}
+
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+}
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+	color: #7a7a7a;
+}
+.card{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+	height: 210px;
+}
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	color: #7a7a7a;
+}
+.card .contenido-card p{
+	line-height: 1.8;
+	color: #6a6a6a;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #2fb4cc;
+	border: 1px solid #2fb4cc;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+.card .contenido-card a:hover{
+	background: #2fb4cc;
+	color: #fff;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+}
+
+.titulomotos {
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin: 30px;
+    font-size: 50px;
+}
+
+.caja img {
+    width: 60vh;
+    height: auto;
+}
+
+
+.contenedorcaja {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.caja {
+    margin: 15px;
+    background: rgb(0, 0, 0, 0.6);
+    border-radius: 7px;
+}
+
+.caja:hover {
+    background-color: #B70E21;
+}
+
+.caja p {
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
